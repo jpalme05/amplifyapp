@@ -1,0 +1,53 @@
+When deciding on what I wanted to do for this assignment I was originally very lost
+as to what I wanted to do and what would be something that is enjoyable. I decided to
+first select a platform to use which was out of Azure or AWS. This is because after 
+some research they are the most popular cloud services, with AWS being far and away the 
+most used. This  means that AWS is the platform I will focus on. From here I have to decide
+on a service that will be widely useful. This has lead me to AWS Amplify, a service that makes
+it easy to create a website and host it. I chose this because all companies that currently
+exist or will in the future are going to need a functional website for their business.
+Being able to do this through the cloud will mean more things can be kept in the AWS eco-system,
+which will be easier to manage everything in one place. 
+
+I have decided to follow the tutorial that can be found at the following link:
+https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/
+
+The tutorial is split into a few different modules, and for each module I am going 
+to write what I learned from completing it and if relevant what more I would like to 
+learn in the future. Please keep in mind that this paper is being written as I complete
+the project, so it will be chronological order.
+
+I have now completed the first module. This module walked me through having a default
+static page created using npx and npm and deploying it from a github account using 
+AWS Amplify. This is the most basic website that can be deployed and the process is
+very streamlined, AWS seems to do almost all of the work for the user including building
+and deploying it on the cloud for you. Something I did not expect was how automated and simple
+it was to have AWS connect and get permissions for the github, as now any changes to my master branch
+on github will be reflected in the website.
+
+The next module goes over how to set up your account to do some local developement, this involves
+creating a AWS Profile on the local machine, similar to what has been done previously in this course.
+This comes with the limitation that when running locally a student account has to use the
+session token.
+
+The third module is about adding authentication to the site. This is one of the coolest 
+parts of the tutorial in my own opinion, as it is usually complicated. Seeing it in a 
+easier way is very nice. While creating this there were also a couple of road blocks, 
+one of these is learning about some legacy library dependencies, where if you only 
+have a newer version of a dependency you need to get the older version too. This is initially
+set up with the amplify cli that was installed during the previous module, once again very 
+simply where you can just use the defaults. This is the first creation of a backend for 
+our frontend. Seeing that the authentication already has a whole lot of basic log in
+requirement such as password strength and confirmation emails really is amazing.
+when deploying the authentication backend I ran into a current issue where the amplify cli
+in aws console was not using the right version so I had to go into settings and set it to 
+always use the latest.
+
+Unfortunately this is where I must abandon the tutorial, as it requires the creation of new IAM
+roles and users that I am unable to complete on an aws educate starter account. Just as a general
+overview of the part of the tutorial I did complete and what I have read through the rest of it, 
+being able to create a queryable database that is linked to a cloud hosted website surprisingly easy.
+I feel that I may sound repetitive at this point, but if you have a full administrator account
+and a basic understanding of how to work with a cli you can create seemingly complex websites.
+
+This is where I will be starting my own extra implementation. 
