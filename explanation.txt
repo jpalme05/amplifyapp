@@ -51,3 +51,7 @@ I feel that I may sound repetitive at this point, but if you have a full adminis
 and a basic understanding of how to work with a cli you can create seemingly complex websites.
 
 This is where I will be starting my own extra implementation. 
+
+My idea is to create a bucket for the website, where each user will have their own "folder" inside of 
+the bucket. The user will be able to upload, download, and query files that are in the bucket. This
+will be done 

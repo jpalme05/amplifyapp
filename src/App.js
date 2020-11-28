@@ -10,6 +10,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>We now have Auth!</h1>
       </header>
+      <button> upload a file</button>
+      <button> download a file</button>  
       <AmplifySignOut />
     </div>
   );
