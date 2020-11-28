@@ -7,6 +7,11 @@ import Amplify from 'aws-amplify';
 import config from './aws-exports';
 Amplify.configure(config);
 
+function upload_file(info){
+  console.log(info)
+  console.log("index")
+}
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
@@ -14,7 +19,10 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
+document.getElementById('file_upload_div')
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+

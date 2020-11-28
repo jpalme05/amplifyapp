@@ -2,17 +2,19 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { upload_file } from './upload_file';
+
 
 function App() {
   return (
     <div className="App">
       <header>
-        <img src={logo} className="App-logo" alt="logo" />
-        <h1>We now have Auth!</h1>
+        <div>
+          <input type="file" id="file_upload_div" onInput={(e)=>upload_file(e)} />
+        </div>
       </header>
-      <button> upload a file</button>
-      <button> download a file</button>  
       <AmplifySignOut />
+      
     </div>
   );
 }
