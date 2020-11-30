@@ -52,6 +52,15 @@ and a basic understanding of how to work with a cli you can create seemingly com
 
 This is where I will be starting my own extra implementation. 
 
-My idea is to create a bucket for the website, where each user will have their own "folder" inside of 
-the bucket. The user will be able to upload, download, and query files that are in the bucket. This
-will be done 
+My idea is to create a bucket for the website, where users will be able to upload files to the bucket. This
+led to some interesting discoveries and issues that I encountered along the way. The biggest issue that I encountered
+is not being able to create IAM users again, because of this the bucket has publically accessible for all users 
+that log in to the website to be able to upload to. Overall, as a security design this is horrid, but as a 
+proof of being able to create a bucket that is interactable from the website it is perfect. The first set
+was setting up the amplify storage, which is dont throught the cli similar to auth. This was pretty straight
+forward as the default settings were good and because I already had auth going I did not need to re-link the 
+backend to the website. Once amplify storage was set up I had to ensure that the policies that the website would
+be using are properly set, which involved looking through the CORS file (Cross-Origin Resource Sharing). Finally, 
+I had to write the javascript for the code. This used some libraries from aws-amplify, and the creation of a new file
+where I was able to store my upload function. In the end adding the storage to the website was very interesting 
+in how easy it was to do, as well with how complex things can get with strict rulings needed.
